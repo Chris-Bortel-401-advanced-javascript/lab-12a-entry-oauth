@@ -20,7 +20,10 @@
     <script type="text/javascript">
       document.getElementById('LoginWithAmazon').onclick = function () {
         options = { scope: 'profile' };
-        amazon.Login.authorize(options, 'http://localhost:3000/oauth');
+        amazon.Login.authorize(
+          options,
+          'https://chris-bortel-401-advanced-javascript.github.io/lab-12a-entry-oauth'
+        );
         return false;
       };
     </script>
